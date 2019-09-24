@@ -11,7 +11,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.ActivityC"></activity>
+        <activity
+            android:name=".activities.ActivityB"
+            android:label="@string/title_activity_b"
+            android:parentActivityName=".activities.ActivityA"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ml.bimdev.baseapp.activities.ActivityA" />
+        </activity>
+        <activity android:name=".activities.ActivityA" />
+        <activity
+            android:name=".activities.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ml.bimdev.baseapp.activities.MainActivity" />
+        </activity>
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
