@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">BaseApp</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="reset_password"><u>Reset password</u></string>
+    <string name="logo">Logo</string>
+    <string name="err_pass_incorrect">Wrong Password!</string>
+    <string name="err_no_such_user">No such user!</string>
+    <string name="reset">Reset</string>
+    <string name="new_password">New Password</string>
+    <string name="old_password">Old password</string>
 </resources>
