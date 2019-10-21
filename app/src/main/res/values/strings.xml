@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BaseApp</string>
+    <string name="btn_send">Отправить</string>
+    <string name="next_activity">Next activity</string>
+    <string name="email_receiver">Email Receiver</string>
+    <string name="to">To:</string>
+    <string name="email_subject">Email Subject:</string>
+    <string name="email_body">Email Body:</string>
 </resources>
