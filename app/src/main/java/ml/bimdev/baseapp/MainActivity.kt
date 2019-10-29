@@ -10,10 +10,6 @@ import androidx.core.app.ShareCompat
 
 
 class MainActivity : AppCompatActivity() {
-    companion object {
-        const val REQUEST_CODE_SHARE = 1
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -45,5 +41,9 @@ class MainActivity : AppCompatActivity() {
                 Toast.LENGTH_LONG
             ).show()
         }
+    }
+
+    companion object {
+        const val REQUEST_CODE_SHARE = 1
     }
 }
