@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class SlidesAdapter(slides: List<Slide>) :
     RecyclerView.Adapter<SlideHolder>() {
+    private var itemClickListener: ((Slide) -> Unit)? = null
 
     var slides = slides
         set(value) {
@@ -19,7 +20,21 @@ class SlidesAdapter(slides: List<Slide>) :
 
     override fun getItemCount() = slides.count()
 
+    override fun getItemId(position: Int) = slides[position].id
+
     override fun onBindViewHolder(holder: SlideHolder, position: Int) {
-        holder.bind(slides[position])
+        holder.bind(slides[position], this::onItemClick)
+    }
+
+    private fun onItemClick(slide: Slide) {
+        itemClickListener?.let { it(slide) }
+    }
+
+    fun setOnItemClickListener(listener: (slide: Slide) -> Unit) {
+        itemClickListener = listener
+    }
+
+    fun removeOnItemClickListener() {
+        itemClickListener = null
     }
 }

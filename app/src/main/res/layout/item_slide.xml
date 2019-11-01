@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
     android:paddingStart="0dp"
     android:paddingTop="8dp"
     android:paddingEnd="16dp"
@@ -42,10 +43,10 @@
         android:fontFamily="sans-serif"
         android:textColor="#757575"
         android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/tv_title"
         app:layout_constraintBottom_toBottomOf="@+id/iv_preview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
         tools:text="И что в него входит" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Recycler</string>
     <string name="preview">preview</string>
+    <string name="attention">Attention! This is lite version of app, for full version wait official release......</string>
 </resources>

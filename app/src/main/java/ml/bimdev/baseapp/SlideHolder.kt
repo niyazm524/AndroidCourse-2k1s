@@ -8,7 +8,8 @@ import kotlinx.android.synthetic.main.item_slide.*
 
 class SlideHolder(override val containerView: View) :
     RecyclerView.ViewHolder(containerView), LayoutContainer {
-    fun bind(slide: Slide) {
+    fun bind(slide: Slide, listener: (Slide) -> Unit) {
+        containerView.setOnClickListener { listener(slide) }
         tv_title.text = slide.title
         tv_content.text = slide.content
         if (slide.url.isNotEmpty())

@@ -37,6 +37,24 @@ object SlidesProvider {
             "Кожа с волосом",
             "\"Тонкая\" кожа",
             "https://nsau.edu.ru/images/vetfac/images/ebooks/histology/histology/r5/exams328ss.jpg"
+        ),
+        Slide(
+            7,
+            "Пилорический отдел желудка",
+            "Окраска гематоксилин-эозином",
+            "https://nsau.edu.ru/images/vetfac/images/ebooks/histology/histology/r7/exams280s.jpg"
+        ),
+        Slide(
+            8,
+            "Кожа пальца",
+            "\"Толстая\" кожа",
+            "https://nsau.edu.ru/images/vetfac/images/ebooks/histology/histology/r5/exams300s.jpg"
+        ),
+        Slide(
+            9,
+            "Кожа с волосом",
+            "\"Тонкая\" кожа",
+            "https://nsau.edu.ru/images/vetfac/images/ebooks/histology/histology/r7/exams232s.jpg"
         )
     )
 }
