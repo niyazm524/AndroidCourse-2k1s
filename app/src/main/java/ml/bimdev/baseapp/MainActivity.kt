@@ -18,8 +18,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
         nav_view.setNavigationItemSelectedListener(this::onNavigationItemSelected)
-        nav_view.setCheckedItem(R.id.nav_home)
-        onNavigationItemSelected(nav_view.menu.findItem(R.id.nav_home))
+        nav_view.setCheckedItem(R.id.nav_inbox)
+        onNavigationItemSelected(nav_view.menu.findItem(R.id.nav_inbox))
+        fab.hide()
         toggle = ActionBarDrawerToggle(
             this,
             drawer,

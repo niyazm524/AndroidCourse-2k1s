@@ -1,4 +1,4 @@
-package ml.bimdev.baseapp.ui.gallery
+package ml.bimdev.baseapp.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,14 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import ml.bimdev.baseapp.R
 
-class GalleryFragment : Fragment() {
+class AddBoxFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
+        val root = inflater.inflate(R.layout.fragment_drafts, container, false)
         return root
     }
 }
