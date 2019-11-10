@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">Fragments</string>
-    <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="nav_header_title">Твоё имя</string>
+    <string name="nav_header_subtitle">почта@gmail.com</string>
+    <string name="nav_header_desc">Краткое описание</string>
 
     <string name="menu_inbox">Входящие</string>
     <string name="menu_sent">Отправленные</string>
@@ -16,4 +14,11 @@
     <string name="new_box_info">Теперь вы можете пользоваться почтой %1$s вместе с другими!</string>
     <string name="new_box_sync_enabled">Синхронизация включена</string>
     <string name="new_box_sync_disabled">Синхронизация выключена</string>
+    <string name="new_address">Новый адрес</string>
+    <string name="password">Пароль</string>
+    <string name="sw_sync_enabled">Синхронизировать автоматически</string>
+    <string name="str_add">Добавить</string>
+    <string name="str_box_added">Ящик добавлен</string>
+    <string name="recycler_with_boxes">Рекуклер с ящиками</string>
+    <string name="str_drafts">Черновики</string>
 </resources>

@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="8dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="8dp">
 
     <ImageView
         android:id="@+id/iv_done_icon"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Ящик добавлен"
+        android:text="@string/str_box_added"
         android:textAllCaps="false"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/iv_done_icon"
