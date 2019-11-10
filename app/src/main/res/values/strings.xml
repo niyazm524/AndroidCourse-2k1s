@@ -12,4 +12,8 @@
     <string name="menu_sent">Отправленные</string>
     <string name="menu_drafts">Черновики</string>
     <string name="menu_email_boxes">Почтовые ящики</string>
+
+    <string name="new_box_info">Теперь вы можете пользоваться почтой %1$s вместе с другими!</string>
+    <string name="new_box_sync_enabled">Синхронизация включена</string>
+    <string name="new_box_sync_disabled">Синхронизация выключена</string>
 </resources>

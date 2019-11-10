@@ -14,7 +14,6 @@ class DraftsFragments : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_add_email_box, container, false)
-        return root
+        return inflater.inflate(R.layout.fragment_drafts, container, false)
     }
 }

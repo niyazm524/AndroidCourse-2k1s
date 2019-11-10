@@ -14,7 +14,6 @@ class SentFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_sent, container, false)
-        return root
+        return inflater.inflate(R.layout.fragment_sent, container, false)
     }
 }
