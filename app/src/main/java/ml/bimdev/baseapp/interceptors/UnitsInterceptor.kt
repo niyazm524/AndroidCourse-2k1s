@@ -5,7 +5,7 @@ import okhttp3.Response
 
 class UnitsInterceptor : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
-        val newUrl = chain.request().url().newBuilder()
+        val newUrl = chain.request().url.newBuilder()
             .addQueryParameter("units", "metric")
             .build()
 
