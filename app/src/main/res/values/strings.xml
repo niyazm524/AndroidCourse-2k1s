@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">BaseApp</string>
+    <string name="app_name">Weather App</string>
+    <string name="temp_celsius">%1$s°</string>
+    <string name="humidity">%1$s%%</string>
+    <string name="pressure">%1$s mmHg</string>
 </resources>
