@@ -2,7 +2,7 @@ package ml.bimdev.baseapp.extensions
 
 import android.graphics.Color
 import ml.bimdev.baseapp.data.City
-import ml.bimdev.baseapp.response.WeatherLocation
+import ml.bimdev.baseapp.network.response.WeatherLocation
 
 fun WeatherLocation.makeCity(): City = City(
     id = this.id,

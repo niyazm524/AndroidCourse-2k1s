@@ -6,7 +6,8 @@ import coil.api.load
 import kotlinx.android.synthetic.main.activity_weather_details.*
 import kotlinx.coroutines.*
 import ml.bimdev.baseapp.extensions.toWindString
-import ml.bimdev.baseapp.response.WeatherResponse
+import ml.bimdev.baseapp.network.OpenWeatherService
+import ml.bimdev.baseapp.network.response.WeatherResponse
 import kotlin.coroutines.CoroutineContext
 
 class WeatherDetailsActivity : AppCompatActivity(), CoroutineScope by MainScope() {

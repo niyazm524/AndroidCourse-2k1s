@@ -1,4 +1,4 @@
-package ml.bimdev.baseapp.interceptors
+package ml.bimdev.baseapp.network.interceptors
 
 import ml.bimdev.baseapp.BuildConfig
 import okhttp3.Interceptor

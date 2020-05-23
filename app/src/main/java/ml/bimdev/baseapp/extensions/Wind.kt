@@ -1,6 +1,6 @@
 package ml.bimdev.baseapp.extensions
 
-import ml.bimdev.baseapp.response.Wind
+import ml.bimdev.baseapp.network.response.Wind
 
 fun Wind.toWindString(): String {
     val direction = if (deg >= 337.5 && deg <= 22.5) "N"

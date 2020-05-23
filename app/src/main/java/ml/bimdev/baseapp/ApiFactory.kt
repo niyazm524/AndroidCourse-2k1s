@@ -1,7 +1,8 @@
 package ml.bimdev.baseapp
 
-import ml.bimdev.baseapp.interceptors.AuthInterceptor
-import ml.bimdev.baseapp.interceptors.UnitsInterceptor
+import ml.bimdev.baseapp.network.OpenWeatherService
+import ml.bimdev.baseapp.network.interceptors.AuthInterceptor
+import ml.bimdev.baseapp.network.interceptors.UnitsInterceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

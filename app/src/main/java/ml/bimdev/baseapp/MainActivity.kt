@@ -17,6 +17,7 @@ import kotlinx.coroutines.*
 import ml.bimdev.baseapp.data.City
 import ml.bimdev.baseapp.extensions.getLastLocationSuspended
 import ml.bimdev.baseapp.extensions.makeCity
+import ml.bimdev.baseapp.network.OpenWeatherService
 import ml.bimdev.baseapp.recycler.CityAdapter
 import kotlin.coroutines.CoroutineContext
 

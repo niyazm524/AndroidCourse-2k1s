@@ -1,4 +1,4 @@
-package ml.bimdev.baseapp.response
+package ml.bimdev.baseapp.network.response
 
 import com.google.gson.annotations.SerializedName
 

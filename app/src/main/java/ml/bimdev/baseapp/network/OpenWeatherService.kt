@@ -1,7 +1,7 @@
-package ml.bimdev.baseapp
+package ml.bimdev.baseapp.network
 
-import ml.bimdev.baseapp.response.WeatherLocationsResponse
-import ml.bimdev.baseapp.response.WeatherResponse
+import ml.bimdev.baseapp.network.response.WeatherLocationsResponse
+import ml.bimdev.baseapp.network.response.WeatherResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 
