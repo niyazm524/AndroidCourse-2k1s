@@ -15,7 +15,7 @@ class CityAdapter :
         LayoutInflater.from(parent.context).inflate(R.layout.item_city, parent, false)
     )
 
-    override fun getItemId(position: Int) = getItem(position).id
+    override fun getItemId(position: Int) = getItem(position).id.toLong()
 
     override fun onBindViewHolder(holder: CityHolder, position: Int) {
         holder.bind(getItem(position), this::onItemClick)

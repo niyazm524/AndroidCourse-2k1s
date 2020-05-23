@@ -1,3 +1,3 @@
 package ml.bimdev.baseapp.data
 
-data class City(val id: Long, val name: String, val temp: Double)
+data class City(val id: Int, val name: String, val temp: Int)

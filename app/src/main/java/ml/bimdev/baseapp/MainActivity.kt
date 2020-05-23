@@ -2,6 +2,7 @@ package ml.bimdev.baseapp
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
 import android.os.Bundle
@@ -33,6 +34,11 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         rv_cities.adapter = adapter
+        adapter.setOnItemClickListener { city ->
+            startActivity(Intent(this, WeatherDetailsActivity::class.java).apply {
+                putExtra("cityId", city.id)
+            })
+        }
         weatherService = ApiFactory.openWeatherService
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         checkPermissions()

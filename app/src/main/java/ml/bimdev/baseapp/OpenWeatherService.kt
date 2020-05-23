@@ -10,6 +10,9 @@ interface OpenWeatherService {
     @GET("weather")
     suspend fun weatherByCityName(@Query("q") cityName: String): WeatherResponse
 
+    @GET("weather")
+    suspend fun weatherByCityId(@Query("id") cityId: Int): WeatherResponse
+
     @GET("find")
     suspend fun weatherByLocation(
         @Query("lat") lat: Double,

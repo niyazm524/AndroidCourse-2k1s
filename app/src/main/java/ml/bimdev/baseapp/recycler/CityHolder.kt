@@ -4,6 +4,7 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.item_city.view.*
+import ml.bimdev.baseapp.R
 import ml.bimdev.baseapp.data.City
 import ml.bimdev.baseapp.extensions.weatherColor
 
@@ -12,7 +13,8 @@ class CityHolder(override val containerView: View) :
     fun bind(city: City, listener: (City) -> Unit) {
         containerView.setOnClickListener { listener(city) }
         containerView.tv_city_name.text = city.name
-        containerView.tv_city_temp.text = "${city.temp}°"
+        containerView.tv_city_temp.text =
+            containerView.context.getString(R.string.temp_celsius, city.temp.toString())
         containerView.tv_city_temp.setTextColor(city.weatherColor)
 
 //        if (city.url.isNotEmpty())

@@ -5,7 +5,7 @@ import ml.bimdev.baseapp.data.City
 import ml.bimdev.baseapp.response.WeatherLocation
 
 fun WeatherLocation.makeCity(): City = City(
-    id = this.id.toLong(),
+    id = this.id,
     name = this.name,
     temp = this.main.temp
 )
