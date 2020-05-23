@@ -20,6 +20,7 @@ import ml.bimdev.baseapp.extensions.makeCity
 import ml.bimdev.baseapp.network.OpenWeatherService
 import ml.bimdev.baseapp.network.response.WeatherResponse
 import ml.bimdev.baseapp.recycler.CityAdapter
+import retrofit2.HttpException
 import kotlin.coroutines.CoroutineContext
 
 
@@ -67,8 +68,10 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope() {
         if (checkPermissions()) {
             location = fusedLocationClient.getLastLocationSuspended()
         }
-        val coords =
-            if (location != null) location.latitude to location.longitude else 55.830433 to 49.066082
+        val coords = if (location != null)
+            location.latitude to location.longitude
+        else PREDEFINED_LOCATION_LAT to PREDEFINED_LOCATION_LON
+
         val response = weatherService.weatherByLocation(coords.first, coords.second)
         return response.list.map { weatherLocation -> weatherLocation.makeCity() }
     }
@@ -81,7 +84,7 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope() {
             if (cityId != null) {
                 openDetailsScreen(cityId)
             }
-        } catch (exception: Exception) {
+        } catch (exception: HttpException) {
             Toast.makeText(this@MainActivity, exception.message, Toast.LENGTH_SHORT).show()
         }
 
@@ -125,5 +128,7 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope() {
 
     companion object {
         const val LOCATION_REQ_CODE = 3
+        const val PREDEFINED_LOCATION_LAT = 55.830433
+        const val PREDEFINED_LOCATION_LON = 49.066082
     }
 }

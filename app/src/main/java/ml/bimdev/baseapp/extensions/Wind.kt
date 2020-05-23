@@ -2,15 +2,27 @@ package ml.bimdev.baseapp.extensions
 
 import ml.bimdev.baseapp.network.response.Wind
 
-fun Wind.toWindString(): String {
-    val direction = if (deg >= 337.5 && deg <= 22.5) "N"
-    else if (deg > 22.5 && deg < 67.5) "NE"
-    else if (deg >= 67.5 && deg <= 112.5) "E"
-    else if (deg > 112.5 && deg < 157.5) "SE"
-    else if (deg >= 157.5 && deg <= 202.5) "S"
-    else if (deg > 202.5 && deg < 247.5) "SW"
-    else if (deg >= 247.5 && deg <= 292.5) "W"
-    else "NW"
+val DIRECTIONS = arrayOf(
+    "N",
+    "NNE",
+    "NE",
+    "ENE",
+    "E",
+    "ESE",
+    "SE",
+    "SSE",
+    "S",
+    "SSW",
+    "SW",
+    "WSW",
+    "W",
+    "WNW",
+    "NW",
+    "NNW"
+)
 
+fun Wind.toWindString(): String {
+    val degree = ((deg / 22.5) + 0.5).toInt()
+    val direction = DIRECTIONS[degree % 16]
     return "${this.speed} m/s $direction"
 }
