@@ -14,7 +14,7 @@ data class WeatherResponse(
     @SerializedName("dt")
     var dt: Int,
     @SerializedName("id")
-    var id: Int,
+    var id: Int?,
     @SerializedName("main")
     var main: Main,
     @SerializedName("name")
